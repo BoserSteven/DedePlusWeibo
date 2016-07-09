@@ -1,0 +1,16 @@
+1.在后台目录的article_add.php文件中的注释：[生成HTML]之前（大约在225行左右），添加本插件中append.php文件中的代码;或者，直接使用article_add.php文件进行替换;
+
+2.将tencent_weibo目录和sina_weibo目录上传至网站根目录下的plus目录;
+
+3.修改/plus/tencent_weibo/API/comm/inc.php文件，
+将appid、appkey、callback三项修改为对应的QQ互联应用中的值;
+
+4.修改/plus/sina_weibo/config.php文件，
+将AKEY丶SKEY丶CALLBACK三项修改为对应的新浪微博开放平台应用中的值;
+
+【附】：
+腾讯微博回调地址：
+http://yourdomain.com/plus/tencent_weibo/example/oauth/callback.php
+
+新浪微博回调地址：
+http://yourdomain.com/plus/sina_weibo/callback.php
